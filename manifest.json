@@ -1,0 +1,17 @@
+{
+  "content_scripts": [
+    {
+      "js": ["scripts.js"],
+      "matches": [
+        "https://*.boardgamegeek.com/boardgame/*",
+        "https://*.bgg.cc/boardgame/*"
+      ]
+    }
+  ],
+  "description": "Add button to boardgameprices on game pages",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsUZ5Z2CNWLILKLDoj5Wfu2Fkb3o8G17XsUv/KsJ1KZYF2HOkfOsZQ2sz67JzFw/Ma1dsAcuqe82YGXvF7ihqHSMx2Xo2p53HcKxvcW4MclyZhpltirZEaxUUF4b2D3IzQoqqupWaoLg34H+OQoQo6rOrREjAQPgDrhcGcF/+X8LNYNe95NjVRQqM+zQYcPFs+ql0GTkUE41CqMW9UCWDojvaY66OpqQoMvBLLkePcSJaaqnI1ndA7QCfBbIiGSnbe6sO+IIKt239eodSyX5irylNI990VHmuh/0Etou2d8E/0m1VGFQAvbd/HLBhTfU2t226WKTT9ER5UkkZ6wyifQIDAQAB",
+  "manifest_version": 3,
+  "name": "Boardgamegeek - boardgameprices",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0"
+}

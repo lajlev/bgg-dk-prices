@@ -1,0 +1,17 @@
+body {
+  background: #222 !important;
+}
+
+.acceptbutton:enabled {
+  animation: background-fade 3s forwards;
+}
+
+@keyframes background-fade {
+  99.9% {
+      background-color: #b6cbe1
+  }
+  100% {
+      background-color:#f00;
+      font-size: 150%;
+  }
+}
