@@ -2,11 +2,14 @@
 var pathArray = window.location.pathname.split("/");
 var BoardgameId = pathArray[2];
 
-// Remove current buy button
+// Remove current buy button if it exists
 $toolbarActions = document.querySelector(".toolbar-actions");
-$toolbarActions
-  .querySelector(".toolbar-actions .toolbar-action .buy-btn")
-  .remove();
+const buyButton = $toolbarActions.querySelector(
+  ".toolbar-actions .toolbar-action .buy-btn"
+);
+if (buyButton) {
+  buyButton.remove();
+}
 
 // Fetch data from braetspilspriser.dk and generate button with price and link to braetspilspriser.dk
 fetch(
